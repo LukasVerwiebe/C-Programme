@@ -58,11 +58,8 @@ void print_binary(unsigned char byte)
  */
 int main(void)
 {
-    /*
-	 * Aufgabe 1: Test
-	 */
-	unsigned char hex1 = 0xFF;
-	unsigned char hex2 = 0x00;
+    unsigned char hex1 = 0xFF;
+    unsigned char hex2 = 0x00;
 
     printf("Test Makro INVERT BIT\n");
 
