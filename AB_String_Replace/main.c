@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void *string_replace(char *s1, char *s2, char *s3);
+char *string_replace(char *s1, char *s2, char *s3);
 
 
 /**
@@ -26,7 +26,7 @@ void *string_replace(char *s1, char *s2, char *s3);
  * @param s3 
  * @return void* 
  */
-void *string_replace(char *s1, char *s2, char *s3)
+char *string_replace(char *s1, char *s2, char *s3)
 {
 	char new_string[] = "";
 	char *new_ptr = &new_string[0];
@@ -80,7 +80,6 @@ void *string_replace(char *s1, char *s2, char *s3)
 	// Letztes Element des Vectors mit '\0' belegen damit dieser keine feste Größe braucht:
 	new_string[index] = '\0';
     printf("String: %s\n", new_ptr);
-	
 	return new_ptr;
 }
 
