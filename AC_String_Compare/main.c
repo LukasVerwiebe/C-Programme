@@ -1,6 +1,6 @@
 /**
  * @file main.c
- * @author your name (you@domain.com)
+ * @author Lukas Verwiebe
  * @brief 
  * @version 0.1
  * @date 2023-10-12
@@ -17,7 +17,7 @@ bool str_prefix(char *string, char *prefix);
 
 /**
  * @brief 
- * Die Funktion prüft ob die zweite Zeichenkette der beginn der ersten Zeichenkette ist.
+ * Die Funktion prüft ob die zweite Zeichenkette "prefix" der beginn der ersten Zeichenkette "string" ist.
  * @param string 
  * @param prefix 
  * @return true 
