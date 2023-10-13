@@ -22,7 +22,7 @@ bool is_set(unsigned char byte, short pos);
  */
 void print_binary(unsigned char byte)
 {
-    for(unsigned char mask = 0x80c; mask > 0; mask >>= 1)
+    for(unsigned char mask = 0x80u; mask > 0; mask >>= 1)
     {
         printf("%d", ((byte & mask) == mask) ? 1 : 0);
     }
