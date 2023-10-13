@@ -12,6 +12,17 @@
 #define AK_HEADER_AUFGABEN_H
 
 
+/**
+ * @brief 
+ * Makro das nur Positive Zahlen zurückgeben soll
+ */
+#define ABS(A) ({ ((A) < 0) ? 0-(A) : (A); })
+
+
+/**
+ * @brief 
+ * Test Makro
+ */
 #define DEBUG(A)
 
 

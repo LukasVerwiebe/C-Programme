@@ -12,9 +12,6 @@
 #include "aufgaben.h"
 
 
-#define DEBUG(A)
-
-
 /**
  * @brief 
  * Die Funktion gibt einen eingegebenen Byte Wert in Binär Schreibweise in der Konsole aus.
@@ -63,15 +60,27 @@ extern int alphabet(char *str1, char *str2)
 int main()
 {
     print_binary(22);
+    printf("\n");
 
     DPRINT(5 + 4);
+    printf("\n");
 
     DPRINT_NEW("text", s);
     DPRINT_NEW(1 + 4, d);
-    DPRINT_NEW(1.0 + 4.5, f);
+    DPRINT_NEW(1.0 + 4.5, .02f);
+    printf("\n");
 
 
     printf("%d\n", alphabet("zabc", "def"));
 	printf("%d\n", alphabet("abc", "def"));
 	printf("%d\n", alphabet("def", "def"));
+    printf("\n");
+
+    int i = 0;
+    double d = 0.0;
+
+    i = -3;
+    printf("%d\n", ABS(i));
+    i = 5;
+    printf("%d\n", ABS(i));
 }
